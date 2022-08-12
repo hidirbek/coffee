@@ -1,0 +1,569 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Fraunces', serif;
+}
+.container{
+  max-width: 1600px;
+  margin: auto;
+}
+
+$barlow-font: 'Barlow', sans-serif;
+
+a{
+  text-decoration: none;
+}
+
+// <!-- SITE HEADER -->
+header{
+  width: 100%;
+}
+.site-header{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 44px 0;
+  padding: 0 5%;
+}
+.nav-links{
+  font-family: $barlow-font;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: 0.923077px;
+  text-transform: uppercase;
+  color: #83888F;
+}
+.head-nav-links+.head-nav-links{
+  margin-left: 30px;
+}
+.head-nav-links:hover{
+  color: #333D4B;
+}
+.hamburger{
+  display: none;
+}
+.fa-bars{
+  font-size: 18px;
+}
+
+// site hero
+
+.about_us-hero{
+  padding: 0 5%;
+  width: 100%;
+
+  // background-size: cover;
+}
+.about_us-hero-bcg{
+  background-image: url('../img/about-us_hero.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 450px;
+  border-radius: 10px;
+}
+.about_us-text-wrapper {
+  padding-top: 10%;
+  margin-left: 10%;
+  width: 33%;
+}
+.about_us-title {
+  font-weight: 900;
+  font-size: 40px;
+  line-height: 48px;
+  color: #FEFCF7;
+}
+.about_us-para {
+  margin-top: 6%;
+  font-family: $barlow-font;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #FEFCF7;
+}
+
+//OUR COMMITMENT
+
+.our-commitment{
+  margin: 11.5% 0;
+  width: 100%;
+  padding: 0 11%;
+}
+.our-commitment-div{
+
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.commitment-img{
+  max-width: 100%;
+}
+
+.commitment-img-tablet {
+  max-width: 100%;
+  display: none;
+}
+.commitment-img-phone {
+  max-width: 100%;
+  display: none;
+}
+
+.commitment-txt-wrapper{
+  width: 48%;
+
+}
+
+.commitment-title{
+  font-weight: 900;
+  font-size: 40px;
+  line-height: 48px;
+  color: #333D4B;
+}
+.commitment-para{
+  font-family: $barlow-font;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: rgba(51, 61, 75, 0.8);
+}
+
+
+
+
+
+
+// UNCOMPROMISING
+
+.uncompromising{
+  padding: 0 5%;
+  border-radius: 10px;
+  width: 100%;
+
+}
+.uncompromising-bcg{
+  margin: 19% 0 12% 0;
+  width: 100%;
+  background: #2C343E;
+  height: 474px;
+  border-radius: 10px;
+  position: relative;
+}
+.uncompromising-bcg::after{
+  content: '';
+  background-image: url('../img/un_quality.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  background-position: center;
+  border-radius: 10px;
+  z-index: 1;
+  right: 85px;
+  bottom: 88px;
+  width: 35%;
+  height: 474px;
+}
+.uncompromising-txt-wrapper {
+  padding-top: 7%;
+  margin-left: 6%;
+  width: 42%;
+}
+.uncompromissing-title {
+  font-weight: 900;
+  font-size: 40px;
+  line-height: 48px;
+  color: #FEFCF7;
+}
+.uncompromissing-para {
+  font-family: $barlow-font;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: rgba(254, 252, 247, 0.8);
+}
+
+// Our headquarters
+
+.headquarters{
+  width: 100%;
+  padding: 0 11%;
+}
+.headquarters-title {
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 32px;
+  color: #83888F;
+}
+.country-list {
+  list-style:none;
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+.counteries-list-item {
+  color: #333D4B;
+}
+.country-img{
+  margin: 27% 0 17% 0;
+}
+.country-name {
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 36px;
+  color: #333D4B;
+  margin-bottom: 9%;
+}
+.country-info {
+  font-family: $barlow-font;
+  width: 160px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+// SITE FOOTER
+.site-footer {
+  margin: 8% 0;
+  width: 100%;
+
+  padding: 0 5%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+}
+.footer-bcg{
+  padding: 0 5%;
+  width: 100%;
+  min-height: 120px;
+  background: #2C343E;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.logo-nav-wrapper {
+  width: 51%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer-logo-img {
+  width: 235px;
+}
+.footer-nav-wrapper {
+  width: 47%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-nav-links:hover {
+  color: #FEFCF7;
+}
+.social-media-footer {
+  width: 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer-socialm-icon {
+  font-size: 30px;
+  color: #FEFCF7;
+}
+.footer-socialm-icon:hover{
+  cursor: pointer;
+  color: #FDD6BA;
+}
+
+
+
+
+
+
+@media only screen and (max-width:1200px) {
+  //FOOTER
+  .logo-nav-wrapper{
+    width: 75%;
+    flex-direction: column;
+  }
+  .footer-nav-wrapper{
+    margin-top: 3%;
+  }
+  .social-media-footer{
+    width: 15%;
+  }
+}
+
+
+@media only screen and (max-width:800px) {
+  .about_us-hero-bcg{
+    height: 400px;
+  }
+  .about_us-text-wrapper{
+    width: 50%;
+  }
+  .about_us-title{
+    font-size: 32px;
+    line-height: 40px;
+  }
+  .about_us-para{
+    font-size: 15px;
+    line-height: 25px;
+  }
+
+  //OUR COMMITMENT
+  .our-commitment{
+    padding: 0 5%;
+  }
+  .commitment-img{
+    display: none;
+  }
+  .commitment-img-tablet{
+    display: block;
+  }
+  .commitment-title{
+    font-size: 32px;
+    line-height: 48px;
+  }
+  .commitment-para{
+    font-size: 15px;
+    line-height: 25px;
+  }
+  // UNCOMPROMISING
+  .uncompromising{
+    margin-top: 39%;
+  }
+  .uncompromising-bcg{
+    height: 488px;
+  }
+  .uncompromising-bcg::after{
+    bottom: 70%;
+    width: 84%;
+    right: 8%;
+    height: 65%;
+    background-position-y: bottom;
+  }
+  .uncompromising-txt-wrapper{
+    margin: auto;
+    text-align: center;
+    width: 76%;
+    padding-top: 31%;
+  }
+  .uncompromissing-title{
+    font-size: 32px;
+    line-height: 48px;
+  }
+  .uncompromissing-para{
+    font-size: 15px;
+    line-height: 25px;
+  }
+
+  //Our headquarters
+  .country-name{
+    font-size: 24px;
+    line-height: 36px;
+  }
+
+
+
+
+
+
+
+
+  //FOOTER
+  .footer-bcg{
+    flex-direction: column;
+  }
+  .logo-nav-wrapper{
+    padding-top: 20px;
+  }
+  .footer-nav-wrapper{
+    width: 65%;
+    margin-top: 4%;
+  }
+  .social-media-footer{
+    width: 20%;
+    margin: 5% 0;
+  }
+  .commitment-title{
+    font-size: 32px;
+    line-height: 48px;
+  }
+  .commitment-para{
+    font-size: 15px;
+    line-height: 25px;
+  }
+}
+
+@media only screen and (max-width:700px) {
+  //Our headquarters
+  .headquarters-title{
+    text-align: center;
+  }
+  .country-list{
+    flex-direction: column;
+    align-items: center;
+  }
+  .counteries-list-item{
+    text-align: center;
+  }
+  .counteries-list-item+.counteries-list-item{
+    margin-top: 80px;
+  }
+  .country-info{
+    margin: auto;
+  }
+  .country-name{
+    font-size: 28px;
+    line-height: 36px;
+  }
+
+}
+
+
+@media only screen and (max-width:630px) {
+  // HEADER MEDIA
+.site-navbar{
+display: none;
+}
+.hamburger{
+display: block;
+}
+.our-commitment-div{
+  flex-direction: column;
+}
+
+// UNCOMPROMISING
+.uncompromising-bcg{
+  height: 510px;
+}
+
+
+
+
+
+
+// footer
+.footer-nav-wrapper{
+  flex-direction: column;
+}
+.footer-nav-links{
+  margin-top: 10px;
+}
+.social-media-footer{
+  width: 26%;
+}
+}
+
+@media only screen and (max-width:500px) {
+  .about_us-text-wrapper{
+    width: 60%;
+  }
+  .commitment-txt-wrapper{
+    width: 70%;
+  }
+  .commitment-title{
+    text-align: center;
+  }
+ // UNCOMPROMISING
+ .uncompromising-bcg::after{
+   bottom: 80%;
+   height: 40%;
+ }
+ .uncompromising-txt-wrapper{
+  width: 90%;
+ }
+ .uncompromissing-title{
+  font-size: 28px;
+  line-height: 28px;
+ }
+
+
+
+  //footer
+  .social-media-footer{
+    width: 30%;
+  }
+}
+
+@media only screen and (max-width:376px) {
+  // HEADER MEDIA
+  .site-header{
+  margin: 32px 0 40px 0;
+  }
+  .logo-img{
+  width: 162px;
+  }
+  .fa-bars{
+  font-size: 16px;
+  }
+  //HERO
+  .about_us-hero-bcg{
+    background-position: calc(100% + 360px);
+  }
+  .about_us-text-wrapper{
+    width: 100%;
+    text-align: center;
+    margin: 0;
+  }
+  .about_us-title{
+    font-size: 28px;
+    line-height: 28px;
+  }
+  //OUR COMMITMENT
+  .commitment-img-tablet{
+    display: none;
+  }
+  .commitment-img-phone{
+    display: block;
+  }
+  .commitment-txt-wrapper{
+    width: 100%;
+    text-align: center;
+  }
+// UNCOMPROMISING
+  .uncompromising-bcg::after{
+    bottom: 85%;
+  }
+  .uncompromising-txt-wrapper{
+    padding-top: 50%;
+  }
+
+
+
+
+
+
+
+//footer
+.footer-logo-img{
+  width: 216px;
+}
+.footer-nav-wrapper{
+  width: 100%;
+  margin: 10% 0;
+}
+.social-media-footer{
+  width: 45%;
+  margin-bottom: 20%;
+}
+}
